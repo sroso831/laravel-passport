@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "11a3e8bb-2329-4752-81cb-99bb35f98102",
+		"name": "Laravel Pasport, VUe Js Autentivication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "suroso",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "suroso@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "suroso@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tampil data user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGQ2Zjg5NDg0N2ViMzg2MTYzNTMxMzRiMjRhYmE2NWI1YmVjODc0NWRhYWJiMGE0ZDZiNzhkOTBhY2M4NjM4OWJiNmI2MmU1ZmMwYmVhOWIiLCJpYXQiOjE2Mjk5MDA3OTUuODIxOTU1LCJuYmYiOjE2Mjk5MDA3OTUuODIxOTYzLCJleHAiOjE2NjE0MzY3OTUuNTMzOTA3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.AIL_ggeKy140Pv0YBbx-SmfOqltjbOmbefkOuqiykidtxAPr82Txp6DdhS-MvjtJvThLFn-vlD-BuL5Orjgm9-3Ky64BjcdGq6CXPR_AyNGGNRWbvCPcqWVqx2QdZBAyJ_qo5BGTIrPlmzvIDmcgIzJKgjVeg8gTQ0hpkF7b8wZ-3wzKOuf5-Abf3sBsZPiJSLjYcZTDC8K87CLhQCV6_lbF8wy933cyuhD2AhDj_5l2DcNcNsiL463HLOGZns5t_8TtsaOEoGUK6rosMNFwIl0NZkClgdTeA4IzNtHdKLK55Kerp27bgKb3nDWSBN2R6UrJMUZHGaePM45vTvKHj5rtnTx6vcHmThZAEvUVl9Q55z0sr0X6kZ4U52lpngCkp83T-ml00VGYZP6eVXU8-jD8gAObJYKeesS0TavGsEWhn3BIQ2CKQLo15gC0qodJebAiosaXP2Si_gaFaPd68xcq4xS711echYaK9k6s7J1cqlliF8HUr_gQ_6zHQYbQKBCLBYt6wjLn_ciBS1UYIFvSZi-8SIdS6V9z_yXChbi20DbLnB0EA8NkB34Mx1WcAfyW3K0eVUcD5CuBAE0O1Pd-ZnEjB7ROfttRgtXjuR3i7aEJtQDMOrZTzypVyT5KU2BIL70TkxM_A-_FMk3x_aoHMWNGSqItxeJcGcoVGi8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
